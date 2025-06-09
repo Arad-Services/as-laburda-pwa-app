@@ -1,0 +1,146 @@
+/*
+ * Admin-specific stylesheet for AS Laburda PWA App.
+ *
+ * @link       https://arad-services.com
+ * @since      2.0.0
+ * @package    AS_Laburda_PWA_App
+ * @subpackage AS_Laburda_PWA_App/admin/css
+ */
+
+.aslp-admin-wrapper {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.aslp-admin-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.aslp-error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.aslp-dashboard-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.aslp-stat-card {
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 calc(33% - 20px); /* Three cards per row, adjust for gap */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.aslp-stat-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.aslp-stat-card p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0073aa; /* WordPress primary color */
+    margin-bottom: 0;
+}
+
+.aslp-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.aslp-list li {
+    background: #fefefe;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aslp-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* AI Assistant specific styles */
+.aslp-ai-chat-interface {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+.aslp-ai-chat-interface textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 100px;
+    font-size: 1em;
+}
+
+.aslp-ai-chat-interface button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0073aa;
+    color: white;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.aslp-ai-chat-interface button:hover {
+    background-color: #005177;
+}
+
+.aslp-ai-chat-interface button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+}
+
+.aslp-ai-response {
+    background-color: #e9f5ff;
+    border: 1px solid #a7d9f9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    word-wrap: break-word; /* Break long words */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .aslp-stat-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .aslp-stat-card {
+        flex: 1 1 100%;
+    }
+}
